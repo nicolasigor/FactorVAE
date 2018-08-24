@@ -488,7 +488,7 @@ class VAE(object):
         if show_figure:
             # Prepare plot
             print("Preparing plot...")
-            plt.figure(figsize=(n_trav, self.z_dim))
+            plt.figure(figsize=(1.5*n_trav, 1.5*self.z_dim))
             gs1 = gridspec.GridSpec(self.z_dim, n_trav)
             gs1.update(wspace=0.02, hspace=0.02)
             for j in range(self.z_dim):
@@ -515,7 +515,7 @@ class VAE(object):
         if show_figure:
             # Prepare plot
             n_examples = len(examples_index)
-            plt.figure(figsize=(n_examples, 2))
+            plt.figure(figsize=(2*n_examples, 2*2))
             gs1 = gridspec.GridSpec(2, n_examples)
             gs1.update(wspace=0.02, hspace=0.02)
             # Plot originals
